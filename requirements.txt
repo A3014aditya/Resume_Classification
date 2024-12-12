@@ -12,3 +12,5 @@ tensorflow
 streamlit
 xgboost
 optuna
+gunicorn
+
