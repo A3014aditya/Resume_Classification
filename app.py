@@ -10,8 +10,12 @@ import nltk
 import time
 import pdfplumber
 import docx
+import numpy as np                                                     
 import scipy.sparse                                                    
-from scipy.linalg import get_blas_funcs, triu
+from scipy.stats import entropy                                        
+from numpy import triu                          
+from scipy.linalg.lapack import get_lapack_funcs                       
+from scipy.special import psi                 
 from gensim.models import Word2Vec, KeyedVectors
 from nltk import sent_tokenize
 from gensim.utils import simple_preprocess
