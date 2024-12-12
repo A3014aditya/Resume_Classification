@@ -10,6 +10,8 @@ import nltk
 import time
 import pdfplumber
 import docx
+import scipy.sparse                                                    
+from scipy.linalg import get_blas_funcs, triu
 from gensim.models import Word2Vec, KeyedVectors
 from nltk import sent_tokenize
 from gensim.utils import simple_preprocess
