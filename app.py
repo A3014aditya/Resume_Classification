@@ -21,9 +21,11 @@ Lemmatizer = WordNetLemmatizer()
 import warnings
 warnings.filterwarnings("ignore")
 
+wrd2vec_path = Path('artifacts\word2vec.pkl')
+Clf_model_path = Path('artifacts\model.pkl')
 # Pickle files 
-wrod2vec = pickle.load(open('artifacts\word2vec.pkl','rb'))
-Clf_model = pickle.load(open('artifacts\model.pkl','rb'))
+wrod2vec = pickle.load(open(wrd2vec_path,'rb'))
+Clf_model = pickle.load(open(Clf_model_path,'rb'))
 
 nltk.download('stopwords')
 nltk.download('wordnet')
