@@ -21,8 +21,8 @@ Lemmatizer = WordNetLemmatizer()
 import warnings
 warnings.filterwarnings("ignore")
 
-wrd2vec_path = Path('artifacts\word2vec.pkl')
-Clf_model_path = Path('artifacts\model.pkl')
+wrd2vec_path = os.path.join('artifacts','word2vec.pkl')
+Clf_model_path = os.path.join('artifacts','model.pkl')
 # Pickle files 
 wrod2vec = pickle.load(open(wrd2vec_path,'rb'))
 Clf_model = pickle.load(open(Clf_model_path,'rb'))
